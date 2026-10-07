@@ -107,8 +107,38 @@ section p {
   margin-bottom: 6px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
 .card p {
   font-size: 0.95rem;
+}
+
+.card-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.card-tags li {
+  font-size: 0.75rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.card-links {
+  display: flex;
+  gap: 16px;
+  margin-top: auto;
+  padding-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 a {

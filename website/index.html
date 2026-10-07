@@ -44,28 +44,58 @@
       <h2>Projects</h2>
       <div class="cards">
         <article class="card">
-          <h3>Terraform S3 Demo</h3>
-          <p>This site! An S3 bucket and its files, provisioned entirely with Terraform.</p>
+          <h3>Shrtner</h3>
+          <p>A lightweight URL shortener that generates compact codes starting at 3 characters, scaling to 4 when collisions occur. It supports custom aliases. The frontend is a static terminal-aesthetic UI, backed by NeonDB (serverless PostgreSQL).</p>
+          <ul class="card-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>NeonDB</li></ul>
+          <div class="card-links"><a href="https://shrtner.htetmyarkaung.com/" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
         </article>
         <article class="card">
-          <h3>Bedrock Chatbot</h3>
-          <p>A serverless chatbot on AWS Lambda using Amazon Bedrock with a React frontend.</p>
+          <h3>FOP2: University Info System</h3>
+          <p>A university information project built as part of the Fundamentals of Programming 2 course.</p>
+          <ul class="card-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li><li>Node.js</li><li>Express</li><li>REST API</li></ul>
+          <div class="card-links"><a href="https://files-vkom.onrender.com/FOP2" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+        <article class="card">
+          <h3>Sar Kyi Tite - Library Management System</h3>
+          <p>A full-stack library management system with user authentication and session timeout, book borrowing and return tracking, bookmarks, automated overdue warnings via email, and a book request system where users can submit requests and admins can reply. The admin panel provides full control over users, books, and borrow records.</p>
+          <ul class="card-tags"><li>React</li><li>Vite</li><li>React Router</li><li>Axios</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>JWT</li><li>bcrypt</li><li>Nodemailer</li></ul>
+          <div class="card-links"><a href="https://sarkyitite.htetmyarkaung.com/" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+        <article class="card">
+          <h3>AWS Bedrock Chatbot</h3>
+          <p>A serverless ChatGPT-style chatbot powered by Amazon Nova Lite 2, an AWS-owned, cost-effective foundation model via AWS Bedrock. Built with a Python Lambda backend exposed through API Gateway. Responses are capped at 500 tokens to keep costs low, and AWS Guardrails are applied to detect and block inappropriate or harmful queries before they reach the model.</p>
+          <ul class="card-tags"><li>Python</li><li>AWS Bedrock</li><li>AWS Lambda</li><li>API Gateway</li><li>Amazon Nova Lite 2</li><li>AWS Guardrails</li></ul>
+          <div class="card-links"><a href="https://github.com/Htet-Myark/Bedrock-ChatBot" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+        </article>
+        <article class="card">
+          <h3>EduPlayground</h3>
+          <p>A gamified learning platform set on an explorable 3D island. Walk your character to a building and step inside: certification exam practice, an AI bedtime storyteller with a neural voice, 3-minute AI movie recaps, real-time multiplayer word battles, a song-guessing game, sleep sounds, and a full kids section. No account required, works instantly in the browser.</p>
+          <ul class="card-tags"><li>React</li><li>Vite</li><li>Three.js</li><li>Node.js</li><li>Express</li><li>WebSockets</li><li>Microsoft Foundry</li><li>MCP</li></ul>
+          <div class="card-links"><a href="https://eduplayground-client-nuia.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+        <article class="card">
+          <h3>Cross-Road Chaos</h3>
+          <p>A browser arcade game where you play a courier crossing four lanes of traffic against a clock, dodging rival couriers and a thief who steals your parcel off the ground. Written in plain JavaScript on HTML5 Canvas with no build step and no dependencies, so it runs straight from a file. It ships with a password-protected analytics dashboard: a serverless collector writes anonymous visit and run statistics to Neon Postgres, grouping visitors by a daily-rotating hash so no stored row points back at a person.</p>
+          <ul class="card-tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas API</li><li>Node.js</li><li>Vercel Functions</li><li>PostgreSQL</li><li>NeonDB</li></ul>
+          <div class="card-links"><a href="https://cross-road-chaos.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a></div>
+        </article>
+        <article class="card">
+          <h3>3-Tier Serverless Web App on AWS</h3>
+          <p>A serverless three-tier application that looks up a user by ID: a static front end in S3 served over HTTPS through CloudFront with origin access control, an API Gateway route calling a Node.js Lambda, and DynamoDB behind it. The write-up walks through the six errors I hit wiring the services together, what each one actually meant, plus the running cost and the teardown steps.</p>
+          <ul class="card-tags"><li>AWS S3</li><li>CloudFront</li><li>API Gateway</li><li>AWS Lambda</li><li>DynamoDB</li><li>Node.js</li><li>JavaScript</li><li>IAM</li></ul>
+          <div class="card-links">
+            <a href="https://d3vebm23m2k9w6.cloudfront.net/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://3tierdocs-226748456235-us-east-1-an.s3.us-east-1.amazonaws.com/index.html" target="_blank" rel="noopener noreferrer">Write-up</a>
+          </div>
         </article>
         <article class="card">
           <h3>RAG Chatbot</h3>
           <p>A retrieval-augmented chatbot with hybrid search over pgvector and layered guardrails.</p>
         </article>
         <article class="card">
-          <h3>Expense Tracker</h3>
-          <p>Personal finance apps in Next.js and ASP.NET Core that turn transactions into insights.</p>
-        </article>
-        <article class="card">
-          <h3>VulnLab</h3>
-          <p>An intentionally vulnerable training app covering the OWASP Top 10.</p>
-        </article>
-        <article class="card">
-          <h3>Rubik AI Solver</h3>
-          <p>A 3D Rubik's Cube in the browser that solves itself with the Kociemba algorithm.</p>
+          <h3>Terraform S3 Demo</h3>
+          <p>This site! An S3 bucket and its files, provisioned entirely with Terraform.</p>
+          <div class="card-links"><a href="https://github.com/Htet-Myark/terraform-demo-S3" target="_blank" rel="noopener noreferrer">GitHub</a></div>
         </article>
       </div>
     </section>
